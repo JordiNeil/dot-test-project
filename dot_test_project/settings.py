@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'oauth2_provider',
+    'rest_framework',
+    "myapi"
 ]
 
 MIDDLEWARE = [
@@ -88,6 +90,16 @@ DATABASES = {
     }
 }
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oauth2_provider.backends.OAuth2Backend',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -112,8 +124,10 @@ OAUTH2_PROVIDER = {
     "OIDC_RSA_PRIVATE_KEY": os.environ.get("OIDC_RSA_PRIVATE_KEY"),
     "SCOPES": {
         "openid": "OpenID Connect scope",
-        "profile": "Profile scope"
-        # ... any other scopes that you use
+        "profile": "Profile scope",
+        'read': 'Read scope', 
+        'write': 'Write scope', 
+        'groups': 'Access to your groups'
     },
     # ... any other settings you want
 }

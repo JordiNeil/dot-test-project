@@ -35,7 +35,7 @@ msgstr "Implícito"
 
 #: oauth2_provider/models.py:78
 msgid "Resource owner password-based"
-msgstr "Propiedario del recurso basado en contraseña"
+msgstr "Propietario del recurso basado en contraseña"
 
 #: oauth2_provider/models.py:79
 msgid "Client credentials"
@@ -59,11 +59,11 @@ msgstr "HMAC con SHA-2 256"
 
 #: oauth2_provider/models.py:104
 msgid "Allowed URIs list, space separated"
-msgstr "Lista de URIs permitidas, separadas por espacio"
+msgstr "Lista de URIs permitidas, separadas por espacios"
 
 #: oauth2_provider/models.py:113
 msgid "Hashed on Save. Copy it now if this is a new secret."
-msgstr "Encriptadas al guardar. Copiar ahora si este es un nuevo secreto."
+msgstr "Encriptado al guardar. Copiar ahora si este es un nuevo secreto."
 
 #: oauth2_provider/models.py:175
 #, python-brace-format
@@ -73,7 +73,7 @@ msgstr "Esquema de redirección no autorizado: {scheme}"
 #: oauth2_provider/models.py:179
 #, python-brace-format
 msgid "redirect_uris cannot be empty with grant_type {grant_type}"
-msgstr "redirect_uris no pueden estar vacías para el tipo de autorización {grant_type}"
+msgstr "redirect_uris no pueden estar vacío para el tipo de autorización {grant_type}"
 
 #: oauth2_provider/models.py:185
 msgid "You must set OIDC_RSA_PRIVATE_KEY to use RSA algorithm"
